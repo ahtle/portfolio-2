@@ -46,7 +46,7 @@ export default {
 					title: "React x Tensorflow Practice",
 					description:
 						"implement tensorflow's Object Detection and Image Classification models.",
-					skills: ["react", "tensorflow"],
+					skills: ["react"],
 					additional_skills: ["tensorflow", "typescript"],
 					github: "https://github.com/ahtle/tensorflow-practice",
 					site: "https://ahtle.github.io/tensorflow-practice",
@@ -69,7 +69,7 @@ export default {
 					description:
 						"track the development of vaccines and theraputics for COVID-19. Uses clinicaltrials.org, pubmed, and drugbank.ca.",
 					skills: ["vuejs", "laravel", "database"],
-					site: "https://racetoacure.stanford.edu/",
+					site: "",
 					images: [
 						{
 							thumb: require("../../../assets/images/racetoacure-1.png"),
@@ -142,7 +142,7 @@ export default {
 					title: "stanford hiring portal",
 					description:
 						"public faculty hiring site. internal applicant management/interview/status system",
-					site: "https://facultyapplication.stanford.edu",
+					site: "",
 					github: "https://github.com/ahtle/domleanfa-docs/blob/main/README.md",
 					skills: ["vuejs", "laravel", "database"],
 					images: [
@@ -198,7 +198,7 @@ export default {
 					description:
 						"The calculators presented in these pages are created for healthcare providers who are familiar with the diagnosis and treatment of patients with liver disease.",
 					skills: ["vuejs"],
-					site: "https://medcalculators.stanford.edu/meld",
+					site: "",
 					images: [
 						{
 							thumb: require("../../../assets/images/medcalculator.png"),

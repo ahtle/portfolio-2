@@ -9,7 +9,7 @@
             <img v-if="!mouseover" src="../../assets/images/dino-1.png" />
             <img v-else src="../../assets/images/dino-2.png"/>
           </div>
-          <span class="primary-color">Anh</span> of house <span class="primary-color">Le</span>, first of his name, maester of nap and watcher of sports, cleaner of code,  user of Google searches, browser of Stackoverflow and youtube.
+          <span class="primary-color">Anh</span> of house <span class="primary-color">Le</span>, first of his name, maester of nap and watcher of sports, cleaner of code, user of Google searches, browser of youtube.
           
           <p><span class="primary-color">House banner:</span> The mouse <i class="fas fa-mouse-pointer"></i></p>
           <p><span class="primary-color">House word:</span> deadlines are coming</p>

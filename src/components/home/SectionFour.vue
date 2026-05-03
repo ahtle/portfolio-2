@@ -6,6 +6,11 @@
       <!-- stage img -->
       <div class="col-sm-6">
         <div class="flex-container">
+          <!-- Spark -->
+          <div class="img-container" @click="stage = 'Spark Advisors'">
+            <img v-if="stage === 'Spark Advisors'" src="../../assets/images/spark.png" />
+            <img v-else src="../../assets/images/spark-bw.png"/>
+          </div>
           <!-- stanford -->
           <div class="img-container" @click="stage = 'Stanford University'">
             <img v-if="stage === 'Stanford University'" src="../../assets/images/stanford.png" />
@@ -48,9 +53,9 @@ export default {
     return {
       header: 'awo3!c b643 -&c1k',
 
-      stage: 'Stanford University',
-      date: '2017 - Present',
-      description: '<span class="primary-color">Web Developer</span> for the Department of Medicine. Create websites and web apps in support of faculty and staffs. Web apps ranges from financial reports, hiring portal, and operational systems. Full-stack skillsets with emphasis in JavaScript.',
+      stage: 'Spark Advisors',
+      date: '',
+      description: '',
 
       // meta
       element_height: 0,
@@ -69,21 +74,27 @@ export default {
         this.decodeHeader();
       }
     },
-    stage (val) {
-      if (val === 'Stanford University') {
-        this.date = '2017 - Present';
-        this.description = '<span class="primary-color">Web Developer</span> for the Department of Medicine. Create websites and web apps in support of faculty and staffs. Web apps ranges from financial reports, hiring portal, and operational systems. Full-stack skillsets with emphasis in JavaScript.';
-      } else if (val === 'BD Biosciences') {
-        this.date = '2013 - 2017';
-        this.description = '<span class="primary-color">Data Specialist</span>. Three plus years of increasing responsibility in a technical role, working on a customer centric, eCommerce web team. Responsible for maintaining the website’s catalog and provide supports for internal and external customers.';
-      } else if (val === 'Thinkful Bootcamp') {
-        this.date = '2017';
-        this.description = 'Intensive <span class="primary-color">web development bootcamp</span>. Front-end technical training in: HTML, CSS, JavaScript/ES6, JQuery, React.js with Redux architecture, AJAX, and Responsive Design. Server-side technical training in: Node.js, REST APIs, MongoDB, Express framework, unit testing with Mocha and Continuous Integration.';
-      } else if (val === 'SJSU') {
-        this.date = '2009 - 2013';
-        this.description = '<span class="primary-color">B.S. Biological Sciences</span> with a minor in Chemistry.';
-      }
-    }
+    stage: {
+      handler(val) {
+        if (val === 'Spark Advisors') {
+          this.date = '2021 - 2026';
+          this.description = '<span class="primary-color">Software Engineer II</span>. Second engineer at healthcare startup. Full-stack skillsets with emphasis in Vue.js and Python. Sees the tech team grow from 2 to 30+.';
+        } else if (val === 'Stanford University') {
+          this.date = '2017 - 2021';
+          this.description = '<span class="primary-color">Web Developer</span> for the Department of Medicine. Create websites and web apps in support of faculty and staffs. Web apps ranges from financial reports, hiring portal, and operational systems. Full-stack skillsets with emphasis in JavaScript.';
+        } else if (val === 'BD Biosciences') {
+          this.date = '2013 - 2017';
+          this.description = '<span class="primary-color">Data Specialist</span>. Three plus years of increasing responsibility in a technical role, working on a customer centric, eCommerce web team. Responsible for maintaining the website’s catalog and provide supports for internal and external customers.';
+        } else if (val === 'Thinkful Bootcamp') {
+          this.date = '2017';
+          this.description = 'Intensive <span class="primary-color">web development bootcamp</span>. Front-end technical training in: HTML, CSS, JavaScript/ES6, JQuery, React.js with Redux architecture, AJAX, and Responsive Design. Server-side technical training in: Node.js, REST APIs, MongoDB, Express framework, unit testing with Mocha and Continuous Integration.';
+        } else if (val === 'SJSU') {
+          this.date = '2009 - 2013';
+          this.description = '<span class="primary-color">B.S. Biological Sciences</span> with a minor in Chemistry.';
+        }
+      }, 
+      immediate: true,
+    },
   },
   methods: {
     handleScroll() {

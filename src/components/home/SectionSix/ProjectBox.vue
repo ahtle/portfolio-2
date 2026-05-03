@@ -22,11 +22,21 @@
       <div class="section tools">
         <span>Tools: </span>
 
-        <font-awesome-icon 
-          v-for="(item, index) in skills" :key="index"
-          :class="`font-awesome ${item}`" 
-          :icon="item === 'database' ? item : [ 'fab', item ]" 
-        />
+        <template v-for="(item, index) in skills">
+          <img
+            v-if="item === 'tensorflow'"
+            class="additional-skills"
+            src="../../../assets/images/tf-logo.png"
+            alt=""
+            :key="'skill-img-' + index"
+          />
+          <font-awesome-icon
+            v-else
+            :key="'skill-fa-' + index"
+            :class="`font-awesome ${item}`"
+            :icon="item === 'database' ? item : ['fab', item]"
+          />
+        </template>
 
         <template v-for="(item) in additional_skills">
             <img v-if="item === 'aem'" class="additional-skills" :key="item" src="../../../assets/images/aem.png" />
