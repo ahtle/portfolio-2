@@ -41,7 +41,7 @@ export default {
       mouseover: false,
 
       // chart
-      labels: ['API', 'Databases', 'HTML/CSS','Javascript','PHP','React/Vue'],
+      labels: ['Python / Django', 'Databases', 'DevOps','PHP','React/Vue'],
       radar_dataset: [
           {
               backgroundColor: [
@@ -71,7 +71,7 @@ export default {
         this.decodeHeader();
 
         // graph
-        this.radar_dataset[0].data = [7,7,9,8,6,7];
+        this.radar_dataset[0].data = [7,5,4,6,9];
         this.update_chart = true;
       }
     }
